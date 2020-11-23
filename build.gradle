@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '1.0.0-beta7'
+    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: '1.0.0-beta7'
+    compile group: 'org.datavec', name: 'datavec-api', version: '1.0.0-beta7'
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.13.4'
+
+}
